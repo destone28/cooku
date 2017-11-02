@@ -9,5 +9,5 @@ API Java per Bot di Telegram
 
 ### Come
 1. Ottenere username e token per il bot da
-[BotFather] (https://core.telegram.org/bots#6-botfather)
+[BotFather](https://core.telegram.org/bots#6-botfather)
 2. Inserire username e token di autenticazione per il bot nel file "Bot.java"
