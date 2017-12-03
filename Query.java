@@ -13,10 +13,11 @@ public class Query {
     public static String main(String ricerca) throws Exception {
     	String risultato ="";
 
-    	if (ricerca.equals("/start")){
+    	if (ricerca.equals("/start"))
     		risultato = ("Benvenuto! Inserisci un ingrediente per riceverne la ricetta!\nPer inserire più ingredienti scrivi:\ningrediente1+ingrediente2+...");
-    	} else {
-
+    	else if (ricerca.equals("/stop"))
+    		risultato = ("Puoi fermarmi direttamente bloccando il bot, o, più pacificamente, non scrivendomi più! ;-)");
+    	else {
         //Fetch the page
         final Document doc = Jsoup.connect("https://google.com/search?q=ricetta+"+ricerca).userAgent(USER_AGENT).get();
 
