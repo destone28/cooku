@@ -1,3 +1,5 @@
+package cooku;
+
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -9,12 +11,12 @@ public class Bot extends TelegramLongPollingBot {
 
 	@Override
 	public String getBotUsername() {
-		return "INSERISCI_QUI_USERNAME";
+		return "cookubot";
 	}
 
 	@Override
 	public String getBotToken() { //associa token bot
-		return "INSERISCI_QUI_TOKEN";
+		return "459037530:AAHbqRgPn68RiVDpFxxe7FFnv4XYMulXQ_s";
 	}
 
 	@SuppressWarnings("deprecation")

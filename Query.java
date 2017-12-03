@@ -1,3 +1,5 @@
+package cooku;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -11,7 +13,7 @@ public class Query {
     public static String main(String ricerca) throws Exception {
     	String risultato ="";
 
-    	if (ricerca=="/start"){
+    	if (ricerca.equals("/start")){
     		risultato = ("Benvenuto! Inserisci un ingrediente per riceverne la ricetta!\nPer inserire più ingredienti scrivi:\ningrediente1+ingrediente2+...");
     	} else {
 
