@@ -14,7 +14,7 @@ public class Query {
     	String risultato ="";
 
     	if (ricerca.equals("/start"))
-    		risultato = ("Benvenuto! Inserisci un ingrediente per riceverne la ricetta!\nPer inserire più ingredienti scrivi:\ningrediente1+ingrediente2+...");
+    		risultato = ("Benvenuto! Inserisci un ingrediente per riceverne la ricetta!\nPer inserire più ingredienti, scrivili tutti nello stesso messaggio.");
     	else if (ricerca.equals("/stop"))
     		risultato = ("Puoi fermarmi direttamente bloccando il bot, o, più pacificamente, non scrivendomi più! ;-)");
     	else {
