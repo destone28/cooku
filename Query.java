@@ -19,7 +19,7 @@ public class Query {
     		risultato = ("Puoi fermarmi direttamente bloccando il bot, o, più pacificamente, non scrivendomi più! ;-)");
     	else {
         //Fetch the page
-        final Document doc = Jsoup.connect("https://google.com/search?q=ricetta+"+ricerca).userAgent(USER_AGENT).get();
+        final Document doc = Jsoup.connect("https://google.it/search?q=ricetta+"+ricerca).userAgent(USER_AGENT).get();
 
         //Traverse the results
         for (Element result : doc.select("h3.r a")){

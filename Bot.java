@@ -66,7 +66,7 @@ public class Bot extends TelegramLongPollingBot {
 	        	
 	        	System.out.println("Messaggio ricevuto da ID: "+aggiornamento.getMessage().getChatId()); //output di debug con id mittente
 	        	try {
-					messaggio.setText(Query.main(aggiornamento.getMessage().getText()));
+					messaggio.setText(Query.main(aggiornamento.getMessage().getText().replaceAll(" ", "+")));
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
